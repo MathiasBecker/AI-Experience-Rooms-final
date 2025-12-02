@@ -1,0 +1,25 @@
+{
+  "L": [
+    "../be-vc-1-day-ws-short/uebersicht-2-climbing.html",
+    "../be-vc-1-day-ws-short/uebersicht-3-tools.html",
+    "../be-vc-1-day-ws-short/uebersicht-4-bias.html",
+    "../be-vc-1-day-ws-short/uebersicht-5-freeexp.html",
+    "../be-vc-1-day-ws-short/uebersicht-6-campfire.html"
+  ],
+  "C": [
+    "../be-vc-2-day-ws/uebersicht-2-climbing.html",
+    "../be-vc-2-day-ws/uebersicht-3-tools.html",
+    "../be-vc-2-day-ws/uebersicht-4-bias.html",
+    "../be-vc-2-day-ws/uebersicht-5-freeexp.html",
+    "../be-vc-2-day-ws/uebersicht-6-deepfakes.html",
+    "../be-vc-2-day-ws/uebersicht-7-freeexp-2.html"
+  ],
+  "m": [
+    "../genai-ws/uebersicht-2-climbing.html",
+    "../genai-ws/uebersicht-3-tools.html",
+    "../genai-ws/uebersicht-4-freeexp.html",
+    "../genai-ws/uebersicht-5-onboarding-taeuschen-und-durchschauen.html",
+    "../genai-ws/uebersicht-6-fake-news-in-aktion.html",
+    "../genai-ws/uebersicht-7-von-tauschung-zur-aufklaerung.html"
+  ]
+}

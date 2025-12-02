@@ -1,0 +1,908 @@
+<!doctype html>
+<!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Jul 16 2025 11:37:54 GMT+0000 (Coordinated Universal Time)  -->
+<html
+  data-wf-page="65f2ecf159eb3ce15e19749d"
+  data-wf-site="650ac8c5157c9d0651332aed"
+>
+  <head>
+    <meta charset="utf-8" />
+    <title>Challenge-4-Experimentation</title>
+    <meta content="Challenge-4-Experimentation" property="og:title" />
+    <meta content="Challenge-4-Experimentation" property="twitter:title" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <link href="../../css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/webflow.css" rel="stylesheet" type="text/css" />
+    <link
+      href="../../css/ikido-erfahrungsraum-bild-5661eee9d4e18.webflow.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link
+      href="https://fonts.gstatic.com"
+      rel="preconnect"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: [
+            "Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic",
+            "Roboto:300,regular,500",
+          ],
+        },
+      });
+    </script>
+    <script type="text/javascript">
+      !(function (o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        ((n.className += t + "js"),
+          ("ontouchstart" in o ||
+            (o.DocumentTouch && c instanceof DocumentTouch)) &&
+            (n.className += t + "touch"));
+      })(window, document);
+    </script>
+    <link
+      href="../../images/favicon.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link href="../../images/webclip.png" rel="apple-touch-icon" />
+  </head>
+  <body class="body">
+    <div class="pop-up-game">
+      <div class="w-layout-blockcontainer container-game-popup w-container">
+        <h2 class="heading-4">Hunderassen-KI</h2>
+        <div class="challenge-head-start w-container">
+          <div class="div-block-left-icon">
+            <img
+              src="../../images/flag.png"
+              loading="lazy"
+              width="24"
+              height=""
+              alt=""
+              srcset="
+                ../../images/flag-p-500.png 500w,
+                ../../images/flag.png       512w
+              "
+              sizes="100vw"
+              class="image-14"
+            />
+          </div>
+          <div>
+            <strong>Wichtig!</strong><br /><br />Für dieses Mini-Spiel kannst du
+            einen bestehenden Pool von Hundebildern. Du findest diese
+            <strong>auf deinem Desktop</strong> im Ordner 🗃️
+            <strong>Dog Breed</strong>.<br /><br />Du kannst aber auch jedes
+            andere Bild verwenden, das du findest, um dieses Mini-Spiel zu
+            spielen.
+          </div>
+        </div>
+        <div class="challenge-head-start w-container">
+          <div class="columns-3 w-row">
+            <div class="column-4 w-clearfix w-col w-col-6">
+              <a
+                href="https://dogai.netlify.app/dash"
+                target="_blank"
+                class="button-game w-button"
+                >Hunderassen-KI spielen</a
+              >
+            </div>
+            <div class="column-5 w-col w-col-6">
+              <a href="#" class="button-game-close-dog-breed w-button"
+                >Dieses Fenster schließen</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="instructions-pop-up">
+      <div class="container-3 w-container">
+        <a
+          data-w-id="ef412fc8-2fe6-655d-f024-f7facd7c2a0b"
+          href="#"
+          class="instructions-pop-up-close-button w-button"
+          >Schließen</a
+        >
+        <div class="div-block-2"></div>
+        <section class="model-training">
+          <h4>Die Schritte zum Trainieren des Modells</h4>
+          <ol role="list" class="list">
+            <li class="list-item">
+              <div class="text-block-2">Öffne die Teachable Machine</div>
+              <a
+                href="https://teachablemachine.withgoogle.com/train/image"
+                target="_blank"
+                class="w-inline-block"
+                ><img
+                  src="../../images/Teachable-Machine-Link-Preview.JPG"
+                  loading="lazy"
+                  sizes="(max-width: 479px) 92vw, (max-width: 728px) 94vw, 685px"
+                  srcset="
+                    ../../images/Teachable-Machine-Link-Preview-p-500.jpg 500w,
+                    ../../images/Teachable-Machine-Link-Preview.JPG       685w
+                  "
+                  alt=""
+                  class="image-11"
+              /></a>
+              <link
+                rel="prerender"
+                href="https://teachablemachine.withgoogle.com/train/image"
+              />
+            </li>
+            <li class="list-item-2">
+              <div class="text-block-3">
+                Lade die Trainingsbilder in “Klasse 1” hoch.
+              </div>
+              <ul role="list" class="list-2">
+                <li class="list-item-3">
+                  <div>
+                    Um Bilder hochzuladen, klicke auf &quot;Hochladen&quot;.
+                  </div>
+                  <img
+                    src="../../images/screenshot-teachablemachine.withgoogle.com-2023.05.11-14_48_28screenshot-teachablemachine.withgoogle.com-2023.05.11-14_48_27.png"
+                    loading="lazy"
+                    width="80"
+                    alt=""
+                    class="image-7"
+                  />
+                </li>
+                <li class="list-item-4">
+                  <div>
+                    Klicke dann auf &quot;Wähle Bilder aus deinen Dateien aus
+                    oder lege sie per Drag-and-Drop hier ab&quot;.
+                  </div>
+                  <img
+                    src="../../images/screenshot-teachablemachine.withgoogle.com-2023.06.08-08_34_42.png"
+                    loading="lazy"
+                    width="200"
+                    alt=""
+                    class="image-8"
+                  />
+                </li>
+                <li class="list-item-5">
+                  <div class="text-block-4">
+                    Wähle <strong>den richtigen Ordner</strong> auf deinem
+                    Computer, und wähle alle Bilder im Ordner aus.
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="list-item-6">
+              <div class="text-block-7">
+                Ändere den Namen der &quot;Klasse 1&quot;.
+              </div>
+              <img
+                src="../../images/Personen-TM-GIF_PS.gif"
+                loading="lazy"
+                width="250"
+                alt=""
+                class="image-9"
+              />
+            </li>
+            <li>
+              <div class="text-block-5">
+                Wiederhole die Schritte 2 und 3, jetzt für Klasse 2.
+              </div>
+            </li>
+            <li>
+              <div class="text-block-6">Trainiere dein Modell!</div>
+              <img
+                src="../../images/screenshot-teachablemachine.withgoogle.com-2023.05.11-15_59_10.png"
+                loading="lazy"
+                width="180"
+                alt=""
+                class="image-10"
+              />
+            </li>
+          </ol>
+        </section>
+        <section class="model-testing">
+          <h4 class="heading-2">Die Schritte zum Testen des Modells</h4>
+          <ol role="list" class="list">
+            <li class="list-item">
+              <div class="text-block-2">
+                Wähle im Abschnitt &quot;Vorschau&quot; die Option
+                &quot;Datei&quot; anstelle von &quot;Webcam&quot;.
+              </div>
+              <img
+                src="../../images/Screenshot-7.png"
+                loading="lazy"
+                width="180"
+                alt=""
+                class="image-12"
+              />
+            </li>
+            <li class="list-item-2">
+              <div class="text-block-3">
+                Teste das Modell, indem du prüfst, in welche Kategorie es jedes
+                der Testbilder einordnet.
+              </div>
+              <ul role="list" class="list-2">
+                <li class="list-item-3">
+                  <div>
+                    Klicke dann auf &quot;Wähle Bilder aus deinen Dateien aus
+                    oder lege sie per Drag-and-Drop hier ab&quot;.
+                  </div>
+                  <img
+                    src="../../images/screenshot-teachablemachine.withgoogle.com-2023.05.11-14_48_28screenshot-teachablemachine.withgoogle.com-2023.05.11-14_48_27.png"
+                    loading="lazy"
+                    width="80"
+                    alt=""
+                    class="image-7"
+                  />
+                </li>
+                <li class="list-item-4">
+                  <div>
+                    Klicke dann auf &quot;Wähle Bilder aus deinen Dateien aus
+                    oder lege sie per Drag-and-Drop hier ab&quot;.
+                  </div>
+                  <img
+                    src="../../images/screenshot-teachablemachine.withgoogle.com-2023.06.08-08_34_42.png"
+                    loading="lazy"
+                    width="200"
+                    alt=""
+                    class="image-8"
+                  />
+                </li>
+                <li class="list-item-5">
+                  <div class="text-block-4">
+                    Wähle den richtigen Ordner auf Deinem Computer. Teste jedes
+                    Bild in diesem Ordner, eins nach dem anderen.
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+      </div>
+    </div>
+    <div class="map-popup overlap">
+      <div class="container-4 w-container">
+        <a
+          data-w-id="7f93bca3-e1ce-cba7-4f29-966aa363722f"
+          href="#"
+          class="pop-up-close-button w-button"
+          >Schließen</a
+        ><img
+          src="../../images/Map.jpg"
+          loading="lazy"
+          sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px"
+          srcset="
+            ../../images/Map-p-500.jpg   500w,
+            ../../images/Map-p-800.jpg   800w,
+            ../../images/Map-p-1080.jpg 1080w,
+            ../../images/Map.jpg        1600w
+          "
+          alt=""
+          class="image-6"
+        />
+      </div>
+    </div>
+    <div class="centered header-challenge-4">
+      <div
+        data-w-id="8220b77e-5dbd-25b6-e41e-ed1a74a399bf"
+        style="opacity: 0"
+        class="w-container"
+      >
+        <h1 class="challenge-heading-top-centrall">DeepFakes</h1>
+      </div>
+    </div>
+    <section class="challenge-content">
+      <div class="challenge-title w-container">
+        <h2 class="heading-4">Teil 1</h2>
+      </div>
+      <div
+        id="w-node-b3a71e18-6ebb-daab-c4b1-300849983b8a-5e19749d"
+        class="w-layout-layout quick-stack-2 wf-layout-layout"
+      >
+        <div
+          id="w-node-b3a71e18-6ebb-daab-c4b1-300849983b8b-5e19749d"
+          class="w-layout-cell cell-2"
+        >
+          <div class="challenge-head-copy">
+            <div class="div-block-left-icon">
+              <img
+                src="../../images/flag.png"
+                loading="lazy"
+                width="24"
+                height=""
+                alt=""
+                srcset="
+                  ../../images/flag-p-500.png 500w,
+                  ../../images/flag.png       512w
+                "
+                sizes="19.99615478515625px"
+                class="image-14"
+              />
+            </div>
+            <div class="w-layout-grid grid">
+              <div class="text-block-8"><strong>Challenge: </strong></div>
+              <div>Wie enttarnt man ein DeepFake?</div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="w-node-_0fa0d862-890e-6198-5658-aa581c25f530-5e19749d"
+          class="w-layout-cell"
+        >
+          <div class="task-head">
+            <div class="div-block-left-icon">
+              <img
+                src="../../images/faq.png"
+                loading="lazy"
+                width="20"
+                sizes="19.99615478515625px"
+                alt=""
+                srcset="
+                  ../../images/faq-p-500.png 500w,
+                  ../../images/faq.png       512w
+                "
+                class="image-15"
+              />
+            </div>
+            <div class="w-layout-grid grid">
+              <div class="text-block-8"><strong>Deine Aufgabe:</strong></div>
+              <div id="w-node-_41b87a30-369e-7551-9631-db710f4d8e98-5e19749d">
+                Siehe Dir ein paar der verlinkten DeepFake Videos an und
+                versuche Eigenschaften zu identifizieren, anhand derer man ein
+                DeepFake erkennen kann.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-delay="4000"
+        data-animation="slide"
+        class="slider w-slider"
+        data-autoplay="false"
+        data-easing="ease"
+        data-hide-arrows="false"
+        data-disable-swipe="false"
+        data-autoplay-limit="0"
+        data-nav-spacing="5"
+        data-duration="500"
+        data-infinite="true"
+      >
+        <div class="mask w-slider-mask">
+          <div class="w-slide">
+            <div class="html-embed-3 w-embed w-iframe">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/cQ54GDm1eL0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen=""
+              ></iframe>
+            </div>
+          </div>
+          <div class="w-slide">
+            <div class="html-embed-4 w-embed w-script">
+              <blockquote
+                class="tiktok-embed"
+                cite="https://www.tiktok.com/@deeptomcruise"
+                data-unique-id="deeptomcruise"
+                data-embed-type="creator"
+                style="max-width: 780px; min-width: 288px"
+              >
+                <section>
+                  <a
+                    target="_blank"
+                    href="https://www.tiktok.com/@deeptomcruise?refer=creator_embed"
+                    >@deeptomcruise</a
+                  >
+                </section>
+              </blockquote>
+              <script async="" src="https://www.tiktok.com/embed.js"></script>
+            </div>
+          </div>
+          <div class="w-slide">
+            <div class="html-embed-5 w-embed w-script">
+              <blockquote
+                class="tiktok-embed"
+                cite="https://www.tiktok.com/@unreal_keanu"
+                data-unique-id="unreal_keanu"
+                data-embed-type="creator"
+                style="max-width: 780px; min-width: 288px"
+              >
+                <section>
+                  <a
+                    target="_blank"
+                    href="https://www.tiktok.com/@unreal_keanu?refer=creator_embed"
+                    >@unreal_keanu</a
+                  >
+                </section>
+              </blockquote>
+              <script async="" src="https://www.tiktok.com/embed.js"></script>
+            </div>
+          </div>
+          <div class="w-slide">
+            <div class="html-embed-6 w-embed w-iframe">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/X17yrEV5sl4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen=""
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="w-slider-arrow-left">
+          <div class="icon-2 w-icon-slider-left"></div>
+        </div>
+        <div class="w-slider-arrow-right">
+          <div class="icon w-icon-slider-right"></div>
+        </div>
+        <div class="slide-nav w-slider-nav w-slider-nav-invert w-shadow"></div>
+      </div>
+      <h2 class="heading-4">Teil 2</h2>
+    </section>
+    <div id="checkpoint1" class="challenge-instructions w-container">
+      <div class="div-block-left-icon">
+        <img
+          src="../../images/test.png"
+          loading="lazy"
+          width="20"
+          sizes="20px"
+          alt=""
+          srcset="../../images/test-p-500.png 500w, ../../images/test.png 512w"
+          class="image-15"
+        />
+      </div>
+      <div class="w-form">
+        <form
+          id="Code-Form"
+          name="email-form"
+          data-name="Email Form"
+          method="get"
+          data-wf-page-id="65f2ecf159eb3ce15e19749d"
+          data-wf-element-id="6d33af05-c3c3-ea05-1230-b677f4ca40b8"
+        >
+          <label for="name"
+            >Halt! Hast Du die Erlaubnis von dem/der Moderator/in
+            bekommen?</label
+          >
+          <div>
+            Wenn ja, gib hier das Code-Wort ein, das du von der/dem Moderator/in
+            erhalten hast:
+          </div>
+          <input
+            class="text-field-2 w-input"
+            maxlength="256"
+            name="name"
+            data-name="Name"
+            placeholder=""
+            type="text"
+            id="input-code"
+          /><input
+            type="submit"
+            data-wait="Please wait..."
+            id="code-submit"
+            class="code-submit w-button"
+            value="Weiter"
+          />
+        </form>
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
+    </div>
+    <section id="DeepFakePt2" class="section-2">
+      <div class="w-layout-blockcontainer w-container">
+        <div
+          id="w-node-_2383f305-7b3d-b49b-4b27-e86580483808-5e19749d"
+          class="w-layout-layout quick-stack-3 wf-layout-layout"
+        >
+          <div
+            id="w-node-_2383f305-7b3d-b49b-4b27-e86580483809-5e19749d"
+            class="w-layout-cell"
+          >
+            <div class="challenge-head-copy">
+              <div class="div-block-left-icon">
+                <img
+                  src="../../images/flag.png"
+                  loading="lazy"
+                  width="24"
+                  height=""
+                  alt=""
+                  srcset="
+                    ../../images/flag-p-500.png 500w,
+                    ../../images/flag.png       512w
+                  "
+                  sizes="19.99615478515625px"
+                  class="image-14"
+                />
+              </div>
+              <div class="w-layout-grid grid">
+                <div class="text-block-8"><strong>Challenge: </strong></div>
+                <div>Wie funktioniert generative Künstliche Intelligenz?</div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="w-node-_2383f305-7b3d-b49b-4b27-e8658048380a-5e19749d"
+            class="w-layout-cell"
+          >
+            <div class="task-head">
+              <div class="div-block-left-icon">
+                <img
+                  src="../../images/faq.png"
+                  loading="lazy"
+                  width="20"
+                  sizes="19.99615478515625px"
+                  alt=""
+                  srcset="
+                    ../../images/faq-p-500.png 500w,
+                    ../../images/faq.png       512w
+                  "
+                  class="image-15"
+                />
+              </div>
+              <div class="w-layout-grid grid">
+                <div class="text-block-8"><strong>Deine Aufgabe:</strong></div>
+                <div id="w-node-_028bff5c-e439-32ff-d36b-932704318089-5e19749d">
+                  Experimentiere mit dem Interactive GAN Lab, indem Du
+                  verschiedene Formen auswählst oder sogar eigene zeichnest, wie
+                  zum Beispiel ein Gesicht. Beobachte dann aufmerksam, wie gut
+                  der Generator in der Lage ist, sich Deiner ausgewählten Form
+                  anzunähern.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="html-embed w-embed w-iframe">
+        <iframe
+          width="100%"
+          height="555px"
+          src="https://poloclub.github.io/ganlab/"
+        ></iframe>
+      </div>
+      <h2 class="heading-4">Teil 3</h2>
+      <div id="checkpoint2" class="challenge-instructions w-container">
+        <div class="div-block-left-icon">
+          <img
+            src="../../images/test.png"
+            loading="lazy"
+            width="20"
+            sizes="20px"
+            alt=""
+            srcset="
+              ../../images/test-p-500.png 500w,
+              ../../images/test.png       512w
+            "
+            class="image-15"
+          />
+        </div>
+        <div class="w-form">
+          <form
+            id="Code-Form"
+            name="email-form"
+            data-name="Email Form"
+            method="get"
+            data-wf-page-id="65f2ecf159eb3ce15e19749d"
+            data-wf-element-id="6d33af05-c3c3-ea05-1230-b677f4ca40b8"
+          >
+            <label for="name"
+              >Halt! Hast Du die Erlaubnis von dem/der Moderator/in
+              bekommen?</label
+            >
+            <div>
+              Wenn ja, gib hier das Code-Wort ein, das du von der/dem
+              Moderator/in erhalten hast:
+            </div>
+            <input
+              class="text-field-2 w-input"
+              maxlength="256"
+              name="name"
+              data-name="Name"
+              placeholder=""
+              type="text"
+              id="input-code2"
+            /><input
+              type="submit"
+              data-wait="Please wait..."
+              id="code-submit2"
+              class="code-submit w-button"
+              value="Weiter"
+            />
+          </form>
+          <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+      </div>
+      <div id="DeepFakePt3" class="section-3-hidden">
+        <div class="w-layout-blockcontainer w-container">
+          <div
+            id="w-node-_223651c8-21ee-0a35-ef16-28d7a95a5701-5e19749d"
+            class="w-layout-layout quick-stack-3 wf-layout-layout"
+          >
+            <div
+              id="w-node-_223651c8-21ee-0a35-ef16-28d7a95a5702-5e19749d"
+              class="w-layout-cell"
+            >
+              <div class="challenge-head-copy">
+                <div class="div-block-left-icon">
+                  <img
+                    src="../../images/flag.png"
+                    loading="lazy"
+                    width="24"
+                    height=""
+                    alt=""
+                    srcset="
+                      ../../images/flag-p-500.png 500w,
+                      ../../images/flag.png       512w
+                    "
+                    sizes="100vw"
+                    class="image-14"
+                  />
+                </div>
+                <div class="w-layout-grid grid">
+                  <div class="text-block-8"><strong>Challenge: </strong></div>
+                  <div>Wie manipuliert man ein Bild?</div>
+                </div>
+              </div>
+            </div>
+            <div
+              id="w-node-_223651c8-21ee-0a35-ef16-28d7a95a570c-5e19749d"
+              class="w-layout-cell"
+            >
+              <div class="task-head">
+                <div class="div-block-left-icon">
+                  <img
+                    src="../../images/faq.png"
+                    loading="lazy"
+                    width="20"
+                    sizes="100vw"
+                    alt=""
+                    srcset="
+                      ../../images/faq-p-500.png 500w,
+                      ../../images/faq.png       512w
+                    "
+                    class="image-15"
+                  />
+                </div>
+                <div class="w-layout-grid grid">
+                  <div class="text-block-8">
+                    <strong>Deine Aufgabe:</strong>
+                  </div>
+                  <div
+                    id="w-node-_223651c8-21ee-0a35-ef16-28d7a95a5714-5e19749d"
+                  >
+                    Nutze die verfügbaren Optionen der Anwendung Drag GAN, um
+                    das Bild der Person zu manipulieren, dass sie z.B. lächelt
+                    oder den Arm hebt. Beobachte dann, wie sich das gesamte Bild
+                    verändert.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-block-17">
+          Klicke auf das Bild, um das KI-Tool DragGAN zu öffnen
+        </div>
+        <a
+          href="https://huggingface.co/spaces/DragGan/DragGan?duplicate=true"
+          target="_blank"
+          class="w-inline-block"
+          ><img
+            src="../../images/Bildschirmfoto-2023-07-10-um-3.07.28-PM.png"
+            loading="lazy"
+            sizes="100vw"
+            srcset="
+              ../../images/Bildschirmfoto-2023-07-10-um-3.07.28-PM-p-500.png   500w,
+              ../../images/Bildschirmfoto-2023-07-10-um-3.07.28-PM-p-800.png   800w,
+              ../../images/Bildschirmfoto-2023-07-10-um-3.07.28-PM-p-1080.png 1080w,
+              ../../images/Bildschirmfoto-2023-07-10-um-3.07.28-PM-p-1600.png 1600w,
+              ../../images/Bildschirmfoto-2023-07-10-um-3.07.28-PM-p-2000.png 2000w,
+              ../../images/Bildschirmfoto-2023-07-10-um-3.07.28-PM-p-2600.png 2600w,
+              ../../images/Bildschirmfoto-2023-07-10-um-3.07.28-PM.png        2876w
+            "
+            alt=""
+        /></a>
+        <div id="exit" class="challenge-instructions w-container">
+          <div class="div-block-left-icon">
+            <img
+              src="../../images/test.png"
+              loading="lazy"
+              width="20"
+              sizes="20px"
+              alt=""
+              srcset="
+                ../../images/test-p-500.png 500w,
+                ../../images/test.png       512w
+              "
+              class="image-15"
+            />
+          </div>
+          <div class="w-form">
+            <form
+              id="Code-Form"
+              name="email-form"
+              data-name="Email Form"
+              method="get"
+              data-wf-page-id="65f2ecf159eb3ce15e19749d"
+              data-wf-element-id="6d33af05-c3c3-ea05-1230-b677f4ca40b8"
+            >
+              <label for="name">Sind alle Aufgaben erfüllt?</label>
+              <div>
+                Wenn ja, gib hier das Code-Wort ein, das Du von der Moderatorin
+                oder dem Moderator erhalten hast:
+              </div>
+              <input
+                class="text-field-2 w-input"
+                maxlength="256"
+                name="name"
+                data-name="Name"
+                placeholder=""
+                type="text"
+                id="input-code3"
+              /><input
+                type="submit"
+                data-wait="Please wait..."
+                id="code-submit3"
+                class="code-submit w-button"
+                value="Weiter"
+              />
+            </form>
+            <div class="w-form-done">
+              <div>Thank you! Your submission has been received!</div>
+            </div>
+            <div class="w-form-fail">
+              <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-references">
+      <div class="container w-container">
+        <div target="_blank" class="rich-text-block-normal w-richtext">
+          <h4>Bildquellen:</h4>
+        </div>
+        <blockquote class="block-quote-2">
+          <a href="https://www.flaticon.com/free-icons" target="_blank"
+            >Reflection of Man Walking - Bing AI Art</a
+          >
+        </blockquote>
+      </div>
+    </section>
+    <div class="section">
+      <div class="container-13">
+        <div class="footer-wrap div-block div-block-20">
+          <a
+            href="https://www.bmfsfj.de/"
+            target="_blank"
+            class="link-block w-inline-block"
+            ><img
+              src="../../images/BMFSFJ-gefördert-vom.jpg"
+              loading="lazy"
+              sizes="(max-width: 1970px) 100vw, 1970px"
+              srcset="
+                ../../images/BMFSFJ-gefördert-vom-p-500.jpg   500w,
+                ../../images/BMFSFJ-gefördert-vom-p-800.jpg   800w,
+                ../../images/BMFSFJ-gefördert-vom-p-1080.jpg 1080w,
+                ../../images/BMFSFJ-gefördert-vom-p-1600.jpg 1600w,
+                ../../images/BMFSFJ-gefördert-vom.jpg        1970w
+              "
+              alt=""
+              class="image-36"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=650ac8c5157c9d0651332aed"
+      type="text/javascript"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../js/webflow.js" type="text/javascript"></script>
+    <style>
+      /* CSS styles for hiding the content */
+      .hidden {
+        display: none;
+      }
+    </style>
+    <script>
+      var part2Code = "123";
+      var part3Code = "123";
+      var correctCode = "123";
+      var part2button = document.getElementById("code-submit");
+      part2button.addEventListener("click", (event) => {
+        event.preventDefault();
+        unlockPart2();
+      });
+      var part3button = document.getElementById("code-submit2");
+      part3button.addEventListener("click", (event) => {
+        event.preventDefault();
+        unlockPart3();
+      });
+      var exitbutton = document.getElementById("code-submit3");
+      exitbutton.addEventListener("click", (event) => {
+        event.preventDefault();
+        exit();
+      });
+      //window.onload = function ()
+      //{
+      //    $("#excalidraw").show();
+      //}
+      function unlockPart2() {
+        // Get the value of the input field with id="numb"
+        let code = document.getElementById("input-code").value;
+        // If x is Not a Number or less than one or greater than 10
+        let text;
+        if (isNaN(code) || code !== part2Code) {
+          text = "Der eingegebene Code ist nicht korrekt";
+        } else {
+          text = "Der eingegebene Code ist richtig";
+          var div = document.querySelector("#DeepFakePt2");
+          div.classList.add("visible");
+          div.style.display = "block";
+          div = document.getElementById("checkpoint1");
+          // Hide the div with a 1-second delay
+          setTimeout(function () {
+            div.style.display = "none";
+          }, 1000);
+          // div = document.querySelector(".container-hint w-container");
+          // div.classList.add('hidden');
+          //window.location.href = "./uebersicht-5-campfire.html";
+        }
+      }
+      function unlockPart3() {
+        // Get the value of the input field with id="numb"
+        let code = document.getElementById("input-code2").value;
+        // If x is Not a Number or less than one or greater than 10
+        let text;
+        if (isNaN(code) || code !== part3Code) {
+          text = "Der eingegebene Code ist nicht korrekt";
+        } else {
+          text = "Der eingegebene Code ist richtig";
+          var div = document.querySelector("#DeepFakePt3");
+          div.classList.add("visible");
+          div.style.display = "block";
+          div = document.getElementById("checkpoint2");
+          // Hide the div with a 1-second delay
+          setTimeout(function () {
+            div.style.display = "none";
+          }, 1000);
+        }
+      }
+      function exit() {
+        // Get the value of the input field with id="numb"
+        let code = document.getElementById("input-code3").value;
+        // If x is Not a Number or less than one or greater than 10
+        let text;
+        if (isNaN(code) || code !== correctCode) {
+          text = "Der eingegebene Code ist nicht korrekt";
+        } else {
+          text = "Der eingegebene Code ist richtig";
+          window.location.href =
+            "./uebersicht-6-campfire.html?showmap=1&level=4";
+        }
+      }
+    </script>
+  </body>
+</html>
