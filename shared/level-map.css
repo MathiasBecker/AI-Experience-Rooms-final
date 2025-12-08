@@ -49,6 +49,7 @@
   margin: auto;
   justify-content: center;
   align-items: center;
+
   &[data-showmap="0"] {
     display: none;
   }
@@ -113,76 +114,73 @@
   aspect-ratio: var(--aspect-ratio);
   z-index: 1;
 }
+
 .interactive-map[data-day="1"] #path-img-6flags,
 .interactive-map[data-day="2"] #path-img-4flags {
   display: none;
 }
 
 /* Day 1 – Room 1 */
-.interactive-map[data-experience-room="1"].interactive-map[data-day="1"].interactive-map[data-achieved-level="1"]
-  .path-img {
+.interactive-map[data-experience-room="1"].interactive-map[data-day="1"].interactive-map[data-achieved-level="1"] .path-img {
   clip-path: inset(0 calc((var(--width-wrapper) - var(--flag-1-x)) * 1px) 0 0);
 }
-.interactive-map[data-experience-room="1"].interactive-map[data-day="1"].interactive-map[data-achieved-level="2"]
-  .path-img {
+
+.interactive-map[data-experience-room="1"].interactive-map[data-day="1"].interactive-map[data-achieved-level="2"] .path-img {
   clip-path: inset(0 calc((var(--width-wrapper) - var(--flag-2-x)) * 1px) 0 0);
 }
-.interactive-map[data-experience-room="1"].interactive-map[data-day="1"].interactive-map[data-achieved-level="3"]
-  .path-img {
+
+.interactive-map[data-experience-room="1"].interactive-map[data-day="1"].interactive-map[data-achieved-level="3"] .path-img {
   clip-path: inset(0 calc((var(--width-wrapper) - var(--flag-3-x)) * 1px) 0 0);
 }
 
 /* Day 2 – Room 1 */
-.interactive-map[data-experience-room="1"].interactive-map[data-day="2"].interactive-map[data-achieved-level="1"]
-  .path-img {
+.interactive-map[data-experience-room="1"].interactive-map[data-day="2"].interactive-map[data-achieved-level="1"] .path-img {
   clip-path: inset(0 calc((var(--width-wrapper) - var(--flag-1-x)) * 1px) 0 0);
 }
-.interactive-map[data-experience-room="1"].interactive-map[data-day="2"].interactive-map[data-achieved-level="2"]
-  .path-img {
+
+.interactive-map[data-experience-room="1"].interactive-map[data-day="2"].interactive-map[data-achieved-level="2"] .path-img {
   clip-path: inset(0 calc((var(--width-wrapper) - var(--flag-2-x)) * 1px) 0 0);
 }
-.interactive-map[data-experience-room="1"].interactive-map[data-day="2"].interactive-map[data-achieved-level="3"]
-  .path-img {
+
+.interactive-map[data-experience-room="1"].interactive-map[data-day="2"].interactive-map[data-achieved-level="3"] .path-img {
   clip-path: inset(0 calc((var(--width-wrapper) - var(--flag-3-x)) * 1px) 0 0);
 }
-.interactive-map[data-experience-room="1"].interactive-map[data-day="2"].interactive-map[data-achieved-level="4"]
-  .path-img {
+
+.interactive-map[data-experience-room="1"].interactive-map[data-day="2"].interactive-map[data-achieved-level="4"] .path-img {
   clip-path: inset(0 calc((var(--width-wrapper) - var(--flag-4-x)) * 1px) 0 0);
 }
-.interactive-map[data-experience-room="1"].interactive-map[data-day="2"].interactive-map[data-achieved-level="5"]
-  .path-img {
+
+.interactive-map[data-experience-room="1"].interactive-map[data-day="2"].interactive-map[data-achieved-level="5"] .path-img {
   clip-path: inset(0 calc((var(--width-wrapper) - var(--flag-5-x)) * 1px) 0 0);
 }
 
 /* Day 1 – Room 2 */
-.interactive-map[data-experience-room="2"].interactive-map[data-day="1"].interactive-map[data-achieved-level="1"]
-  .path-img {
+.interactive-map[data-experience-room="2"].interactive-map[data-day="1"].interactive-map[data-achieved-level="1"] .path-img {
   clip-path: inset(0 calc((var(--width-wrapper) - var(--flag-1-x)) * 1px) 0 0);
 }
-.interactive-map[data-experience-room="2"].interactive-map[data-day="1"].interactive-map[data-achieved-level="2"]
-  .path-img {
+
+.interactive-map[data-experience-room="2"].interactive-map[data-day="1"].interactive-map[data-achieved-level="2"] .path-img {
   clip-path: inset(0 calc((var(--width-wrapper) - var(--flag-3-x)) * 1px) 0 0);
 }
 
 /* Day 2 – Room 2 */
-.interactive-map[data-experience-room="2"].interactive-map[data-day="2"].interactive-map[data-achieved-level="1"]
-  .path-img {
+.interactive-map[data-experience-room="2"].interactive-map[data-day="2"].interactive-map[data-achieved-level="1"] .path-img {
   clip-path: inset(0 calc((var(--width-wrapper) - var(--flag-1-x)) * 1px) 0 0);
 }
-.interactive-map[data-experience-room="2"].interactive-map[data-day="2"].interactive-map[data-achieved-level="2"]
-  .path-img {
+
+.interactive-map[data-experience-room="2"].interactive-map[data-day="2"].interactive-map[data-achieved-level="2"] .path-img {
   clip-path: inset(0 calc((var(--width-wrapper) - var(--flag-2-x)) * 1px) 0 0);
 }
-.interactive-map[data-experience-room="2"].interactive-map[data-day="2"].interactive-map[data-achieved-level="3"]
-  .path-img {
+
+.interactive-map[data-experience-room="2"].interactive-map[data-day="2"].interactive-map[data-achieved-level="3"] .path-img {
   clip-path: inset(0 calc((var(--width-wrapper) - var(--flag-3-x)) * 1px) 0 0);
 }
-.interactive-map[data-experience-room="2"].interactive-map[data-day="2"].interactive-map[data-achieved-level="4"]
-  .path-img {
+
+.interactive-map[data-experience-room="2"].interactive-map[data-day="2"].interactive-map[data-achieved-level="4"] .path-img {
   clip-path: inset(0 calc((var(--width-wrapper) - var(--flag-4-x)) * 1px) 0 0);
 }
-.interactive-map[data-experience-room="2"].interactive-map[data-day="2"].interactive-map[data-achieved-level="5"]
-  .path-img {
+
+.interactive-map[data-experience-room="2"].interactive-map[data-day="2"].interactive-map[data-achieved-level="5"] .path-img {
   clip-path: inset(0 calc((var(--width-wrapper) - var(--flag-5-x)) * 1px) 0 0);
 }
 
@@ -191,6 +189,7 @@
   width: 100%;
   position: absolute;
   color: #247899;
+
   & h1 {
     font-size: calc(var(--ratio) * 3rem);
     margin: 0.25rem 0;
@@ -201,71 +200,85 @@
   position: relative;
   z-index: 9999;
 }
+
 .flag {
   max-height: calc(var(--flag-size) * 1px);
   position: absolute;
   animation: flag-jump 3s infinite;
 }
+
 .filter-unreached {
   filter: saturate(0%) opacity(10%);
 }
+
 .filter-reached {
   filter: saturate(0%) opacity(50%);
 }
+
 @keyframes flag-jump {
   10% {
     transform: translateY(-4px);
   }
+
   30% {
     transform: translateY(0);
   }
 }
+
 .flag-1 {
   left: calc((var(--flag-1-x) - var(--flag-offset)) * 1px);
   top: calc((var(--flag-1-y) - (var(--flag-size) - var(--flag-offset))) * 1px);
   animation-delay: 0s;
 }
+
 .flag-2 {
   left: calc((var(--flag-2-x) - var(--flag-offset)) * 1px);
   top: calc((var(--flag-2-y) - (var(--flag-size) - var(--flag-offset))) * 1px);
   animation: flag-jump 3s infinite;
   animation-delay: 0.2s;
 }
-.interactive-map[data-experience-room="2"].interactive-map[data-day="1"]
-  .flag-2 {
+
+.interactive-map[data-experience-room="2"].interactive-map[data-day="1"] .flag-2 {
   display: none;
 }
+
 .flag-3 {
   left: calc((var(--flag-3-x) - var(--flag-offset)) * 1px);
   top: calc((var(--flag-3-y) - (var(--flag-size) - var(--flag-offset))) * 1px);
   animation: flag-jump 3s infinite;
   animation-delay: 0.4s;
 }
+
 .flag-4 {
   left: calc((var(--flag-4-x) - var(--flag-offset)) * 1px);
   top: calc((var(--flag-4-y) - (var(--flag-size) - var(--flag-offset))) * 1px);
   animation: flag-jump 3s infinite;
   animation-delay: 0.6s;
 }
+
 .flag-5 {
   left: calc((var(--flag-5-x) - var(--flag-offset)) * 1px);
   top: calc((var(--flag-5-y) - (var(--flag-size) - var(--flag-offset))) * 1px);
   animation: flag-jump 3s infinite;
   animation-delay: 0.4s;
 }
+
 .flag-6 {
   left: calc((var(--flag-6-x) - var(--flag-offset)) * 1px);
   top: calc((var(--flag-6-y) - (var(--flag-size) - var(--flag-offset))) * 1px);
   animation: flag-jump 3s infinite;
   animation-delay: 0.6s;
 }
+
 .interactive-map[data-day="1"] .flag-5,
 .interactive-map[data-day="1"] .flag-6 {
   display: none;
 }
+
 .flag:hover {
   animation: none;
 }
+
 .popup {
   --popup-width: 250;
   --fontsize: 1;
@@ -320,7 +333,7 @@
   top: calc((var(--flag-6-y) - var(--popup-offset)) * 1px);
 }
 
-.flag:hover + .popup {
+.flag:hover+.popup {
   opacity: 1;
   transition: opacity 0.25s ease-in-out;
 }
@@ -338,6 +351,7 @@
   width: calc(337px * var(--ratio) * var(--achievement-multi));
   height: calc(312px * var(--ratio) * var(--achievement-multi));
 }
+
 .badge,
 .competencies,
 .competencies-desc {
@@ -346,6 +360,7 @@
   position: relative;
   z-index: 1000;
 }
+
 .badge-content,
 .competencies-content,
 .competencies-desc-content {
@@ -355,20 +370,24 @@
   position: absolute;
   flex-direction: column;
 }
+
 .competencies-content,
 .competencies-desc-content {
   padding-right: 1rem;
 }
+
 .badge-message {
   margin: 0.75em 0;
   padding: 0 2em;
   font-size: 1.1em;
   z-index: 200;
 }
+
 .badge-img {
   flex: 1;
   position: relative;
   z-index: 200;
+
   &:before,
   &:after {
     content: "";
@@ -377,6 +396,7 @@
     display: block;
     width: 100%;
   }
+
   &:after {
     top: calc(var(--ratio) * 0.5em);
     height: 100%;
@@ -385,36 +405,46 @@
     background-position: center;
   }
 }
+
 .interactive-map[data-achieved-level="1"] .badge-img:after {
   background-image: url(./level-map-images/badge-1.svg);
 }
+
 .interactive-map[data-achieved-level="2"] .badge-img:after {
   background-image: url(./level-map-images/badge-2.svg);
 }
+
 .interactive-map[data-achieved-level="3"] .badge-img:after {
   background-image: url(./level-map-images/badge-3.svg);
 }
+
 .interactive-map[data-achieved-level="4"] .badge-img:after {
   background-image: url(./level-map-images/badge-4.svg);
 }
+
 .interactive-map[data-achieved-level="5"] .badge-img:after {
   background-image: url(./level-map-images/badge-5.svg);
 }
+
 .interactive-map[data-achieved-level="6"] .badge-img:after {
   background-image: url(./level-map-images/badge-6.svg);
 }
+
 .badge-title,
 .competencies-title {
   font-size: 1.25em;
   font-weight: 700;
   z-index: 200;
 }
+
 .badge-title {
   margin: 1.25em 0 0.5em;
 }
+
 .competencies-title {
   margin: 0.5em 0;
 }
+
 .badge-bg,
 .competencies-bg,
 .competencies-desc-bg {
@@ -422,6 +452,7 @@
   left: 0;
   z-index: 100;
 }
+
 .badge-bg,
 .badge-bg-shadow,
 .competencies-bg,
@@ -434,11 +465,13 @@
   background-repeat: no-repeat;
   position: absolute;
 }
+
 .badge-bg,
 .badge-bg-shadow {
   background-color: #b7def9;
   border-radius: 0 40px 50px 0;
 }
+
 .competencies-bg,
 .competencies-bg-shadow,
 .competencies-desc-bg,
@@ -446,6 +479,7 @@
   background-color: #b7def9;
   border-radius: 0 40px 30px 0;
 }
+
 .badge-bg-shadow,
 .competencies-bg-shadow,
 .competencies-desc-bg-shadow {
@@ -454,10 +488,12 @@
   z-index: 99;
   filter: hue-rotate(10deg) brightness(0.3) saturate(4);
 }
+
 .competencies {
   width: calc(424px * var(--ratio) * var(--achievement-multi));
   height: calc(173px * var(--ratio) * var(--achievement-multi));
 }
+
 .competencies-list {
   list-style: none;
   flex: 1;
@@ -488,52 +524,63 @@
   transition: background-color 0.25s ease-in-out;
   cursor: default;
 }
+
 .competencies-info-icon {
   width: 1em;
   height: 1em;
   animation: info-pulse 2s ease 0s infinite normal forwards;
 }
+
 @keyframes info-pulse {
   50% {
     opacity: 0.55;
     transform: scale(1.2);
   }
 }
+
 .competencies-desc {
   width: calc(424px * var(--ratio) * var(--achievement-multi));
   height: calc(173px * var(--ratio) * var(--achievement-multi));
   transition: transform 0.2s ease-in-out;
   filter: saturate(0);
 }
+
 .competencies-desc-content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .competencies-desc-text {
   padding: 0 1em;
   font-size: 1.1em;
   z-index: 200;
 }
+
 .competencies-info-icon:hover,
-.competencies-list--item:hover ~ .competencies-info-icon {
+.competencies-list--item:hover~.competencies-info-icon {
   animation-play-state: paused;
 }
+
 .competencies-info:hover .competencies-desc {
   display: block;
 }
+
 .interactive-map[data-achieved-level="0"] .achievement-container {
   display: none;
 }
+
 .interactive-map[data-achieved-level="0"] .path-img {
   filter: saturate(0) brightness(200%);
 }
+
 .next-button-container {
   position: absolute;
   top: 2%;
   right: 2%;
-  z-index: 1000;
+  z-index: 10000;
 }
+
 .next-button {
   padding: 1rem 2rem;
   font-size: 1.2rem;
@@ -551,6 +598,7 @@
 .next-button:active {
   box-shadow: 4px 4px 1px #22466e;
 }
+
 .next-button:hover {
   background-color: #73bae9;
   color: #fff;

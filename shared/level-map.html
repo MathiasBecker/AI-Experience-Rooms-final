@@ -7,7 +7,7 @@
 		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic%7CRoboto:300,regular,500"
 		media="all" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Vite App</title>
+	<title>Übersicht des KI-Bergs</title>
 	<style>
 		body {
 			font-family: Open Sans, sans-serif;
@@ -20,137 +20,137 @@
 		/*to prevent Firefox FOUC, this must be here*/
 		let FF_FOUC_FIX;
 	</script>
-  <script type="module" crossorigin>
-  (function () {
-		const e = document.createElement("link").relList;
-		if (e && e.supports && e.supports("modulepreload"))
-			return;
-		for (const t of document.querySelectorAll('link[rel="modulepreload"]'))
-			s(t);
-		new MutationObserver(t => {
-			for (const n of t)
-				if (n.type === "childList")
-					for (const c of n.addedNodes)
-						c.tagName === "LINK" && c.rel === "modulepreload" && s(c)
-		}
-		).observe(document, {
-			childList: !0,
-			subtree: !0
-		});
-		function r(t) {
-			const n = {};
-			return t.integrity && (n.integrity = t.integrity),
-				t.referrerPolicy && (n.referrerPolicy = t.referrerPolicy),
-				t.crossOrigin === "use-credentials" ? n.credentials = "include" : t.crossOrigin === "anonymous" ? n.credentials = "omit" : n.credentials = "same-origin",
-				n
-		}
-		function s(t) {
-			if (t.ep)
+	<script type="module" crossorigin>
+		(function () {
+			const e = document.createElement("link").relList;
+			if (e && e.supports && e.supports("modulepreload"))
 				return;
-			t.ep = !0;
-			const n = r(t);
-			fetch(t.href, n)
+			for (const t of document.querySelectorAll('link[rel="modulepreload"]'))
+				s(t);
+			new MutationObserver(t => {
+				for (const n of t)
+					if (n.type === "childList")
+						for (const c of n.addedNodes)
+							c.tagName === "LINK" && c.rel === "modulepreload" && s(c)
+			}
+			).observe(document, {
+				childList: !0,
+				subtree: !0
+			});
+			function r(t) {
+				const n = {};
+				return t.integrity && (n.integrity = t.integrity),
+					t.referrerPolicy && (n.referrerPolicy = t.referrerPolicy),
+					t.crossOrigin === "use-credentials" ? n.credentials = "include" : t.crossOrigin === "anonymous" ? n.credentials = "omit" : n.credentials = "same-origin",
+					n
+			}
+			function s(t) {
+				if (t.ep)
+					return;
+				t.ep = !0;
+				const n = r(t);
+				fetch(t.href, n)
+			}
 		}
-	}
-	)
-	();
-	let L, C, m, R, W;
-	fetch('./level-map-config.json')
-	  .then(response => response.json())
-	  .then(config => {
-	    L = config.L;
-	    C = config.C;
-	    m = config.m;
-	    R = [L, C];
-	    W = [m, m];
-	    $(); // Only call $ after config is loaded!
-		console.log("Config loaded:", { L, C, m, R, W });
-	  });
+		)
+			();
+		let L, C, m, R, W;
+		fetch('./level-map-config.json')
+			.then(response => response.json())
+			.then(config => {
+				L = config.L;
+				C = config.C;
+				m = config.m;
+				R = [L, C];
+				W = [m, m];
+				$(); // Only call $ after config is loaded!
+				console.log("Config loaded:", { L, C, m, R, W });
+			});
 
-	const y = ["erstes", "zweites", "drittes", "viertes", "fünftes", "letztes"]
-		, I = ["KI-Einsteiger:in", "KI-Scout", "KI-Detektiv:in", "KI-Macher:in", "KI-Wächterin", "KI-Master:in"]
-		, E = ["Challenge 1: Basistraining", "Challenge 2: Die Werkzeuge richtig einsetzen", "Challenge 3: In die Irre geführt", "Challenge 4: Freies Experimentieren", "Challenge 5: Vernebelte Wirklichkeit", "Challenge 6: Freies Experimentieren II"]
-		, D = ["Wie lernt ein KI-System?", "Was ist beim Training eines KI-Systems wichtig?", "Weshalb können KI-Systeme falsch liegen?", "Wie kannst Du Deine KI-Kompetenzen anwenden?", "Kannst Du ein Deepfake enttarnen?", "Entwickle kreative Lösungen für aktuelle Herausforderungen"]
-		, x = ["Challenge 1: Basistraining", "Challenge 2: Die Werkzeuge richtig einsetzen", "Challenge 3: Freies Experimentieren", "Challenge 4: Täuschen und Durchschauen", "Challenge 5: Fake News in Aktion", "Challenge 6: Von Täuschung zur Aufklärung"]
-		, z = ["Wie schaffen es KI-Textgeneratoren, Texte zu generieren?", "Wie ist der Ablauf bei der Entwicklung eines Chatbots?", "Wie entwickle ich meinen eigenen Chatbot?", "Kannst du Fake News Strategien entlarven?", "Wie einfach kann man mit KI Desinformation erstellen?", "Wie kann man sich vor Fake News schützen?"]
-		, S = [["Erkennen von KI im Alltag", "KI-Grundlagen verstehen", "Verständnis der KI-Lernprozesse"], ["Feinabstimmung der Trainingsdaten", "Zuverlässigkeitsbewertung in KI-Systemen"], ["Testen der Grenzen von KI-Systemen", "Ein Auge für Details"], ["Ethisches Bewusstsein in der KI-Entwicklung", "Innovative KI-Ideenfindung"], ["Erkennen von Deepfakes im Alltag", "Bewusstsein für Deepfake Risiken", "Deepfake-Erkennungstools verstehen"], ["Einblick in die Entwicklung von Deepfake-Erkennungswerkzeugen"]]
-		, A = [["Trainiert mit Texten", "KI denkt nicht – sie rechnet", "Nur so gut wie die Daten"], ["Einen Chatbot entwickeln", "Einfluss von Falschinformationen erkennen"], ["Chatbot selbst gestalten", "KI kritisch hinterfragen"], ["Desinformations-Mechanismen durchschauen", "Manipulationstaktiken erkennen"], ["KI als Werkzeug für Desinformation vestehen", "Kritischer Umgang mit digitalen Inhalten", "Deepfake-Erkennungstools verstehen"], ["Mit Wissen andere stärken"]]
-		, K = [["Du erkennst, wo KI in verschiedenen Bereichen wie Spielen, sozialen Medien und mehr auftaucht.", "Du verstehst jetzt die Grundlagen von KI-Systemen, die Bilderkennung nutzen.", "Du hast verstanden, wie KI-Systeme, die Bilderkennung nutzen, lernen - du weißt, was Begriffe wie Trainingsdaten, Labels, Algorithmen und Tests bedeuten."], ["Du weißt, wie wichtig eine hohe Qualität und Vielfalt der Trainingsdaten für ein funktionierendes KI-System ist.", "Du kannst die Zuverlässigkeit von KI-Systemen beurteilen. Du verstehst, was KI-Systeme vertrauenswürdig macht - von guten Daten bis zum Verständnis ihrer Grenzen."], ["Du verstehst die Grenzen eines KI-Systems und wie abhängig es vom menschlichen Input ist.", "Du hast entdeckt, wie kleine Änderungen einen großen Einfluss auf die Ergebnisse eines KI-Systems haben können. Du verstehst, wie wichtig es ist, beim Training und Testen eines KI-Systems präzise zu sein. "], ["Du kennst die guten, die schlechten und die heiklen ethischen Aspekte bei der Entwicklung und Nutzung von KI.", "Du kannst kreative, unkonventionelle Ideen entwickeln, um KI auf verblüffende, neue Weise und auf verantwortungsvolle Weise zu nutzen."], ["Du kennst Anhaltspunkte, anhand derer Du Deepfakes im Alltag besser erkennen kannst.", "Du hast ein Verständnis für die Risiken, welche von Deepfakes ausgehen können, und kennst Gegenmaßnahmen, wie man diese Risiken minimieren könnte.", "Du verstehst, welche Fähigkeiten und Einschränkungen Deepfake-Erkennungstools bei der Identifizierung von Deepfakes in verschiedenen Kontexten aufweisen. Dazu gehört u.a., dass die Tools manche Manipulationen übersehen, oder falsch identifizieren."], ["Du kannst die Herausforderungen bei der Entwicklung von Deepfake-Erkennungswerkzeugen verstehen und dein eigenes Werkzeug prototypisch konzipieren."]]
-		, T = [["Du weißt jetzt, dass Sprachmodelle aus riesigen Sammlungen von Dokumenten lernen, um ihre Texte zu erstellen.", "Du weißt, dass Text-KI-Systeme kein echtes Verständnis haben, sondern nur statistische Muster aus den Trainingsdaten nutzen.", "Du erkennst, dass die Qualität und Vielfalt der Trainingsdaten direkt bestimmen, welche Inhalte eine Text-KI generiert."], ["Du weißt, wie ein Chatbot aufgebaut ist und wie du ihn mit passenden Informationen trainierst.", "Du erkennst, dass falsche oder fehlende Informationen das Verhalten des Chatbots stark beeinflussen können."], ["Du entwickelst einen eigenen Chatbot und setzt dein Wissen selbstständig um.", "Du prüfst die Antworten deines Chatbots genau und hinterfragst, wie verlässlich sie wirklich sind."], ["Du weißt jetzt, wie Fake-News-Verbreiter:innen gezielt Täuschungsstrategien einsetzen, um glaubwürdig zu wirken und Aufmerksamkeit zu erzeugen.", "Du hast einige Taktiken wie emotionale Ansprache, Identitätsbetrug oder Polarisierung kennen gelernt und verstehst, wie sie geziehlt eingesetzt werden, um Meinungen zu beeinflussen."], ["Du hast erlebt, wie einfach sich mit Text-KI-Systemen überzeugende Fake News erstellen lassen.", "Du verstehst, wie Text-KI-Systeme die Verbreitung von Desinformation begünstigen, und warum es wichtig ist, digitale Inhalte genau zu hinterfragen."], ["Du hast dein Wissen genutzt und mit deinem Poster andere Nutzer:innen für Desinformation sensiblisiert."]],
-		// , L = ["https://ikido.info/AI-ExperienceRooms/final/be-vc-1-day-ws-short/uebersicht-2-climbing.html", "https://ikido.info/AI-ExperienceRooms/final/be-vc-1-day-ws-short/uebersicht-3-tools.html", "https://ikido.info/AI-ExperienceRooms/final/be-vc-1-day-ws-short/uebersicht-4-bias.html", "https://ikido.info/AI-ExperienceRooms/final/be-vc-1-day-ws-short/uebersicht-5-freeexp.html"],
-		// C = ["https://ikido.info/AI-ExperienceRooms/final/be-vc-2-day-ws/uebersicht-2-climbing.html", "https://ikido.info/AI-ExperienceRooms/final/be-vc-2-day-ws/uebersicht-3-tools.html", "https://ikido.info/AI-ExperienceRooms/final/be-vc-2-day-ws/uebersicht-4-bias.html", "https://ikido.info/AI-ExperienceRooms/final/be-vc-2-day-ws/uebersicht-5-freeexp.html", "https://ikido.info/AI-ExperienceRooms/final/be-vc-2-day-ws/uebersicht-6-deepfakes.html", "https://ikido.info/AI-ExperienceRooms/final/be-vc-2-day-ws/uebersicht-7-freeexp-2.html"],
-		// m = ["https://ikido.info/AI-ExperienceRooms/GenAI/genai-ws/uebersicht-2-climbing.html", "https://ikido.info/AI-ExperienceRooms/GenAI/genai-ws/uebersicht-3-tools.html", "https://ikido.info/AI-ExperienceRooms/GenAI/genai-ws/uebersicht-4-freeexp.html", "https://ikido.info/AI-ExperienceRooms/GenAI/genai-ws/uebersicht-5-onboarding-taeuschen-und-durchschauen.html", "https://ikido.info/AI-ExperienceRooms/GenAI/genai-ws/uebersicht-6-fake-news-in-aktion.html", "https://ikido.info/AI-ExperienceRooms/GenAI/genai-ws/uebersicht-7-von-tauschung-zur-aufklaerung.html"],
-		// R = [L, C],
-		// W = [m, m],
-		a = document.querySelector("#interactive-map")
-		, N = document.querySelector(".badge-message b")
-		, q = document.querySelector(".badge-title")
-		, P = document.querySelector(".competencies-list")
-		, M = document.querySelector("#competencies-list--item-template")
-		, g = document.querySelector(".competencies-desc")
-		, B = document.querySelector(".competencies-desc-text");
-	function f() {
-		return new URLSearchParams(window.location.search)
-	}
-	const d = f();
-	function F() {
-		const i = d.get("level");
-		if (!i)
-			return console.warn("Didn't got a 'level' parameter, forcefully setting 'level' to 0."),
-				0;
-		let e = Number.parseInt(i, 10);
-		return Number.isNaN(e) && (console.warn("'level' parameter is not a number, forcefully setting 'level' to 0."),
-			e = 0),
-			e > 6 && (console.warn("'level' is greater then 6, but can only be between 0 - 6, forcefully setting 'level' to 6."),
-				e = 6),
-			e
-	}
-	function p() {
-		return F()
-	}
-	function k() {
-		const i = d.get("day");
-		if (!i)
-			return console.warn("Didn't got a 'day' parameter, for best experience add a 'day' parameter to the url. Forcefully setting 'day' to 1."),
-				1;
-		const e = parseInt(i, 10);
-		return Number.isNaN(e) ? (console.warn("'day' parameter is not a number, forcefully setting 'day' to 1."),
-			1) : e > 2 ? (console.warn("'day' is greater then 2, but can only be between 1 - 2, forcefully setting 'day' to 1."),
+		const y = ["erstes", "zweites", "drittes", "viertes", "fünftes", "letztes"]
+			, I = ["KI-Einsteiger:in", "KI-Scout", "KI-Detektiv:in", "KI-Macher:in", "KI-Wächterin", "KI-Master:in"]
+			, E = ["Challenge 1: Basistraining", "Challenge 2: Die Werkzeuge richtig einsetzen", "Challenge 3: In die Irre geführt", "Challenge 4: Freies Experimentieren", "Challenge 5: Vernebelte Wirklichkeit", "Challenge 6: Freies Experimentieren II"]
+			, D = ["Wie lernt ein KI-System?", "Was ist beim Training eines KI-Systems wichtig?", "Weshalb können KI-Systeme falsch liegen?", "Wie kannst Du Deine KI-Kompetenzen anwenden?", "Kannst Du ein Deepfake enttarnen?", "Entwickle kreative Lösungen für aktuelle Herausforderungen"]
+			, x = ["Challenge 1: Basistraining", "Challenge 2: Die Werkzeuge richtig einsetzen", "Challenge 3: Freies Experimentieren", "Challenge 4: Täuschen und Durchschauen", "Challenge 5: Fake News in Aktion", "Challenge 6: Von Täuschung zur Aufklärung"]
+			, z = ["Wie schaffen es KI-Textgeneratoren, Texte zu generieren?", "Wie ist der Ablauf bei der Entwicklung eines Chatbots?", "Wie entwickle ich meinen eigenen Chatbot?", "Kannst du Fake News Strategien entlarven?", "Wie einfach kann man mit KI Desinformation erstellen?", "Wie kann man sich vor Fake News schützen?"]
+			, S = [["Erkennen von KI im Alltag", "KI-Grundlagen verstehen", "Verständnis der KI-Lernprozesse"], ["Feinabstimmung der Trainingsdaten", "Zuverlässigkeitsbewertung in KI-Systemen"], ["Testen der Grenzen von KI-Systemen", "Ein Auge für Details"], ["Ethisches Bewusstsein in der KI-Entwicklung", "Innovative KI-Ideenfindung"], ["Erkennen von Deepfakes im Alltag", "Bewusstsein für Deepfake Risiken", "Deepfake-Erkennungstools verstehen"], ["Einblick in die Entwicklung von Deepfake-Erkennungswerkzeugen"]]
+			, A = [["Trainiert mit Texten", "KI denkt nicht – sie rechnet", "Nur so gut wie die Daten"], ["Einen Chatbot entwickeln", "Einfluss von Falschinformationen erkennen"], ["Chatbot selbst gestalten", "KI kritisch hinterfragen"], ["Desinformations-Mechanismen durchschauen", "Manipulationstaktiken erkennen"], ["KI als Werkzeug für Desinformation vestehen", "Kritischer Umgang mit digitalen Inhalten", "Deepfake-Erkennungstools verstehen"], ["Mit Wissen andere stärken"]]
+			, K = [["Du erkennst, wo KI in verschiedenen Bereichen wie Spielen, sozialen Medien und mehr auftaucht.", "Du verstehst jetzt die Grundlagen von KI-Systemen, die Bilderkennung nutzen.", "Du hast verstanden, wie KI-Systeme, die Bilderkennung nutzen, lernen - du weißt, was Begriffe wie Trainingsdaten, Labels, Algorithmen und Tests bedeuten."], ["Du weißt, wie wichtig eine hohe Qualität und Vielfalt der Trainingsdaten für ein funktionierendes KI-System ist.", "Du kannst die Zuverlässigkeit von KI-Systemen beurteilen. Du verstehst, was KI-Systeme vertrauenswürdig macht - von guten Daten bis zum Verständnis ihrer Grenzen."], ["Du verstehst die Grenzen eines KI-Systems und wie abhängig es vom menschlichen Input ist.", "Du hast entdeckt, wie kleine Änderungen einen großen Einfluss auf die Ergebnisse eines KI-Systems haben können. Du verstehst, wie wichtig es ist, beim Training und Testen eines KI-Systems präzise zu sein. "], ["Du kennst die guten, die schlechten und die heiklen ethischen Aspekte bei der Entwicklung und Nutzung von KI.", "Du kannst kreative, unkonventionelle Ideen entwickeln, um KI auf verblüffende, neue Weise und auf verantwortungsvolle Weise zu nutzen."], ["Du kennst Anhaltspunkte, anhand derer Du Deepfakes im Alltag besser erkennen kannst.", "Du hast ein Verständnis für die Risiken, welche von Deepfakes ausgehen können, und kennst Gegenmaßnahmen, wie man diese Risiken minimieren könnte.", "Du verstehst, welche Fähigkeiten und Einschränkungen Deepfake-Erkennungstools bei der Identifizierung von Deepfakes in verschiedenen Kontexten aufweisen. Dazu gehört u.a., dass die Tools manche Manipulationen übersehen, oder falsch identifizieren."], ["Du kannst die Herausforderungen bei der Entwicklung von Deepfake-Erkennungswerkzeugen verstehen und dein eigenes Werkzeug prototypisch konzipieren."]]
+			, T = [["Du weißt jetzt, dass Sprachmodelle aus riesigen Sammlungen von Dokumenten lernen, um ihre Texte zu erstellen.", "Du weißt, dass Text-KI-Systeme kein echtes Verständnis haben, sondern nur statistische Muster aus den Trainingsdaten nutzen.", "Du erkennst, dass die Qualität und Vielfalt der Trainingsdaten direkt bestimmen, welche Inhalte eine Text-KI generiert."], ["Du weißt, wie ein Chatbot aufgebaut ist und wie du ihn mit passenden Informationen trainierst.", "Du erkennst, dass falsche oder fehlende Informationen das Verhalten des Chatbots stark beeinflussen können."], ["Du entwickelst einen eigenen Chatbot und setzt dein Wissen selbstständig um.", "Du prüfst die Antworten deines Chatbots genau und hinterfragst, wie verlässlich sie wirklich sind."], ["Du weißt jetzt, wie Fake-News-Verbreiter:innen gezielt Täuschungsstrategien einsetzen, um glaubwürdig zu wirken und Aufmerksamkeit zu erzeugen.", "Du hast einige Taktiken wie emotionale Ansprache, Identitätsbetrug oder Polarisierung kennen gelernt und verstehst, wie sie geziehlt eingesetzt werden, um Meinungen zu beeinflussen."], ["Du hast erlebt, wie einfach sich mit Text-KI-Systemen überzeugende Fake News erstellen lassen.", "Du verstehst, wie Text-KI-Systeme die Verbreitung von Desinformation begünstigen, und warum es wichtig ist, digitale Inhalte genau zu hinterfragen."], ["Du hast dein Wissen genutzt und mit deinem Poster andere Nutzer:innen für Desinformation sensiblisiert."]],
+			// , L = ["https://ikido.info/AI-ExperienceRooms/final/be-vc-1-day-ws-short/uebersicht-2-climbing.html", "https://ikido.info/AI-ExperienceRooms/final/be-vc-1-day-ws-short/uebersicht-3-tools.html", "https://ikido.info/AI-ExperienceRooms/final/be-vc-1-day-ws-short/uebersicht-4-bias.html", "https://ikido.info/AI-ExperienceRooms/final/be-vc-1-day-ws-short/uebersicht-5-freeexp.html"],
+			// C = ["https://ikido.info/AI-ExperienceRooms/final/be-vc-2-day-ws/uebersicht-2-climbing.html", "https://ikido.info/AI-ExperienceRooms/final/be-vc-2-day-ws/uebersicht-3-tools.html", "https://ikido.info/AI-ExperienceRooms/final/be-vc-2-day-ws/uebersicht-4-bias.html", "https://ikido.info/AI-ExperienceRooms/final/be-vc-2-day-ws/uebersicht-5-freeexp.html", "https://ikido.info/AI-ExperienceRooms/final/be-vc-2-day-ws/uebersicht-6-deepfakes.html", "https://ikido.info/AI-ExperienceRooms/final/be-vc-2-day-ws/uebersicht-7-freeexp-2.html"],
+			// m = ["https://ikido.info/AI-ExperienceRooms/GenAI/genai-ws/uebersicht-2-climbing.html", "https://ikido.info/AI-ExperienceRooms/GenAI/genai-ws/uebersicht-3-tools.html", "https://ikido.info/AI-ExperienceRooms/GenAI/genai-ws/uebersicht-4-freeexp.html", "https://ikido.info/AI-ExperienceRooms/GenAI/genai-ws/uebersicht-5-onboarding-taeuschen-und-durchschauen.html", "https://ikido.info/AI-ExperienceRooms/GenAI/genai-ws/uebersicht-6-fake-news-in-aktion.html", "https://ikido.info/AI-ExperienceRooms/GenAI/genai-ws/uebersicht-7-von-tauschung-zur-aufklaerung.html"],
+			// R = [L, C],
+			// W = [m, m],
+			a = document.querySelector("#interactive-map")
+			, N = document.querySelector(".badge-message b")
+			, q = document.querySelector(".badge-title")
+			, P = document.querySelector(".competencies-list")
+			, M = document.querySelector("#competencies-list--item-template")
+			, g = document.querySelector(".competencies-desc")
+			, B = document.querySelector(".competencies-desc-text");
+		function f() {
+			return new URLSearchParams(window.location.search)
+		}
+		const d = f();
+		function F() {
+			const i = d.get("level");
+			if (!i)
+				return console.warn("Didn't got a 'level' parameter, forcefully setting 'level' to 0."),
+					0;
+			let e = Number.parseInt(i, 10);
+			return Number.isNaN(e) && (console.warn("'level' parameter is not a number, forcefully setting 'level' to 0."),
+				e = 0),
+				e > 6 && (console.warn("'level' is greater then 6, but can only be between 0 - 6, forcefully setting 'level' to 6."),
+					e = 6),
+				e
+		}
+		function p() {
+			return F()
+		}
+		function k() {
+			const i = d.get("day");
+			if (!i)
+				return console.warn("Didn't got a 'day' parameter, for best experience add a 'day' parameter to the url. Forcefully setting 'day' to 1."),
+					1;
+			const e = parseInt(i, 10);
+			return Number.isNaN(e) ? (console.warn("'day' parameter is not a number, forcefully setting 'day' to 1."),
+				1) : e > 2 ? (console.warn("'day' is greater then 2, but can only be between 1 - 2, forcefully setting 'day' to 1."),
+					1) : e
+		}
+		function U() {
+			const i = d.get("er");
+			if (!i)
+				return console.warn("Didn't got a 'experienceRoom' parameter, for best experience add a 'experienceRoom' parameter to the url. Forcefully setting 'experienceRoom' to 1."),
+					1;
+			const e = parseInt(i, 10);
+			return Number.isNaN(e) || e < 1 || e > 2 ? (console.warn("'experienceRoom' parameter is either not a number or not between 1 - 2, forcefully setting 'experienceRoom' to 1."),
 				1) : e
-	}
-	function U() {
-		const i = d.get("er");
-		if (!i)
-			return console.warn("Didn't got a 'experienceRoom' parameter, for best experience add a 'experienceRoom' parameter to the url. Forcefully setting 'experienceRoom' to 1."),
-				1;
-		const e = parseInt(i, 10);
-		return Number.isNaN(e) || e < 1 || e > 2 ? (console.warn("'experienceRoom' parameter is either not a number or not between 1 - 2, forcefully setting 'experienceRoom' to 1."),
-			1) : e
-	}
-	// function G(i) {
-	// 	const r = document.querySelector(".next-button-container").querySelector(".next-button")
-	// 		, t = f().get("redirectUrl")
-	// 		, n = k()
-	// 		, c = p()
-	// 		, h = t ?? i[n - 1][c - 1];
+		}
+		// function G(i) {
+		// 	const r = document.querySelector(".next-button-container").querySelector(".next-button")
+		// 		, t = f().get("redirectUrl")
+		// 		, n = k()
+		// 		, c = p()
+		// 		, h = t ?? i[n - 1][c - 1];
 
-	// 	setTimeout(() => {
-	// 		r.addEventListener("click", () => {
-	// 			location.href = h
-	// 		}
-	// 		),
-	// 			r.classList.add("show")
-	// 	}
-	// 		, 5e3)
-	// }
-	function G(i) {
+		// 	setTimeout(() => {
+		// 		r.addEventListener("click", () => {
+		// 			location.href = h
+		// 		}
+		// 		),
+		// 			r.classList.add("show")
+		// 	}
+		// 		, 5e3)
+		// }
+		function G(i) {
 			const r = document
 				.querySelector(".next-button-container")
 				.querySelector(".next-button"),
 				t = f().get("redirectUrl"),
 				n = k(),
 				c = p(),
-				h = t ?? i[n - 1][c];
+				h = t ?? i[n - 1]?.[c - 1];
 
 			// Make the button static and immediately clickable
 			r.addEventListener("click", () => {
@@ -161,68 +161,68 @@
 				}
 			});
 		}
-	function V(i, e, r, s = "unreached") {
-		const t = document.querySelector(".path-assets template"),
-			n = t.content.cloneNode(!0);
-		n.querySelector(".flag").classList.add(`flag-${i}`),
-			n.querySelector(".flag").classList.add(`filter-${s}`),
-			n.querySelector(".popup").classList.add(`popup-${i}`),
-			n.querySelector(".flag-title").textContent = e,
-			n.querySelector(".flag-question").textContent = r,
-			t.parentElement?.appendChild(n)
-	}
+		function V(i, e, r, s = "unreached") {
+			const t = document.querySelector(".path-assets template"),
+				n = t.content.cloneNode(!0);
+			n.querySelector(".flag").classList.add(`flag-${i}`),
+				n.querySelector(".flag").classList.add(`filter-${s}`),
+				n.querySelector(".popup").classList.add(`popup-${i}`),
+				n.querySelector(".flag-title").textContent = e,
+				n.querySelector(".flag-question").textContent = r,
+				t.parentElement?.appendChild(n)
+		}
 
-	function $(i = !1) {
-		const e = p();
-		console.info(`Achieved Level: ${e}`);
-		const r = k();
-		console.info(`Map Style: ${r}`);
-		const s = U();
-		console.info(`Experience Room: ${s}`);
-		a.style.setProperty("--width-wrapper", a.clientWidth.toString());
-		a.setAttribute("data-day", r.toString());
-		a.setAttribute("data-achieved-level", e.toString());
-		a.setAttribute("data-experience-room", s.toString());
-		if (i || e === 0)
-			return;
-		N.textContent = `${y[e - 1]} Abzeichen`;
-		q.textContent = `${I[e - 1]}`;
-		P.innerHTML = ""; 
-		(s === 1 ? S[e - 1] : A[e - 1]).forEach((o, u) => {
-			const b = M.innerHTML
-				, l = document.createElement("li");
-			l.classList.add("competencies-list--item"),
-				l.innerHTML = b,
-				l.addEventListener("mouseover", () => {
-					const v = s === 1 ? K : T;
-					B.textContent = v[e - 1][u],
-						g.classList.remove("hidden-transform")
-				}
-				),
-				l.addEventListener("mouseleave", () => {
-					g.classList.add("hidden-transform")
-				}
-				);
-			const w = l.querySelector(".competencies-list--item-text");
-			w.textContent = o,
-				P.appendChild(l),
-				a.classList.add("map-initialized")
+		function $(i = !1) {
+			const e = p();
+			console.info(`Achieved Level: ${e}`);
+			const r = k();
+			console.info(`Map Style: ${r}`);
+			const s = U();
+			console.info(`Experience Room: ${s}`);
+			a.style.setProperty("--width-wrapper", a.clientWidth.toString());
+			a.setAttribute("data-day", r.toString());
+			a.setAttribute("data-achieved-level", e.toString());
+			a.setAttribute("data-experience-room", s.toString());
+			if (i || e === 0)
+				return;
+			N.textContent = `${y[e - 1]} Abzeichen`;
+			q.textContent = `${I[e - 1]}`;
+			P.innerHTML = "";
+			(s === 1 ? S[e - 1] : A[e - 1]).forEach((o, u) => {
+				const b = M.innerHTML
+					, l = document.createElement("li");
+				l.classList.add("competencies-list--item"),
+					l.innerHTML = b,
+					l.addEventListener("mouseover", () => {
+						const v = s === 1 ? K : T;
+						B.textContent = v[e - 1][u],
+							g.classList.remove("hidden-transform")
+					}
+					),
+					l.addEventListener("mouseleave", () => {
+						g.classList.add("hidden-transform")
+					}
+					);
+				const w = l.querySelector(".competencies-list--item-text");
+				w.textContent = o,
+					P.appendChild(l),
+					a.classList.add("map-initialized")
+			}
+			);
+			const n = s === 1 ? E : x
+				, c = s === 1 ? D : z;
+			for (let o = 0; o < n.length; o++) {
+				const u = e > o + 1 ? "reached" : e === o + 1 ? "active" : "unreached";
+				V(o + 1, n[o], c[o], u)
+			}
+			G(s === 1 ? R : W)
+		}
+		// $() is now called only after config is loaded (line 66)
+		addEventListener("resize", () => {
+			a.style.setProperty("--width-wrapper", a.clientWidth.toString())
 		}
 		);
-		const n = s === 1 ? E : x
-			, c = s === 1 ? D : z;
-		for (let o = 0; o < n.length; o++) {
-			const u = e > o + 1 ? "reached" : e === o + 1 ? "active" : "unreached";
-			V(o + 1, n[o], c[o], u)
-		}
-		G(s === 1 ? R : W)
-	}
-	$();
-	addEventListener("resize", () => {
-		a.style.setProperty("--width-wrapper", a.clientWidth.toString())
-	}
-	);
-  </script>
+	</script>
 </head>
 
 <body>
