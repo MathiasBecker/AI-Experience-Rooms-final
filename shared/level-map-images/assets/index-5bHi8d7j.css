@@ -86,7 +86,7 @@
 	width: 100%;
 	max-width: calc(var(--width-og) * 1px);
 	aspect-ratio: var(--aspect-ratio);
-	background-image: url('../mountain.png');
+	background-image: url('../mountain6.png');
 	background-size: contain;
 	/* Wrapper always in the background */
 	z-index: 0;
@@ -285,7 +285,7 @@
 	top: calc((var(--flag-6-y) - var(--popup-offset)) * 1px);
 }
 
-.flag:hover + .popup {
+.flag:hover+.popup {
 	opacity: 1;
 	transition: opacity 0.25s ease-in-out;
 }
@@ -526,7 +526,7 @@
 }
 
 .competencies-info-icon:hover,
-.competencies-list--item:hover ~ .competencies-info-icon {
+.competencies-list--item:hover~.competencies-info-icon {
 	animation-play-state: paused;
 }
 
