@@ -1188,6 +1188,7 @@
               class="code-submit w-button"
               value="Weiter"
             />
+            <div id="errorMessageCodeSubmit" style="color: red; margin-top: 10px;"></div>
           </form>
           <div class="w-form-done">
             <div>Thank you! Your submission has been received!</div>
@@ -1351,6 +1352,18 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/webflow.js" type="text/javascript"></script>
+    <script>
+      // Checks the unlock codes without exposing them in the page source.
+      // Inlined deliberately: no extra request that can 404 or go stale and
+      // silently break every code gate on the page.
+      function codeHash(s) {
+        var h = 0;
+        for (var i = 0; i < s.length; i++) {
+          h = (h * 131 + s.charCodeAt(i)) % 4294967291;
+        }
+        return h.toString(16);
+      }
+    </script>
     <style>
       html {
       	// now for the good stuff 🎉
@@ -1417,7 +1430,7 @@
       window.onload = function () {
         $("#excalidraw").show();
       };
-      var correctCode = "872";
+      var correctCodeHash = "ec64f";
       var exitbutton = document.getElementById("code-submit");
       exitbutton.addEventListener("click", (event) => {
         event.preventDefault();
@@ -1434,10 +1447,12 @@
         let text;
         if (code.length == 0) {
           text = "Bitte einen Code eingeben";
+          document.getElementById("errorMessageCodeSubmit").innerHTML = text;
           //console.log(isNaN(code));
         } else {
-          if (code.toUpperCase() == correctCode.toUpperCase()) {
+          if (codeHash(code) === correctCodeHash) {
             text = "Der eingegebene Code ist richtig";
+            document.getElementById("errorMessageCodeSubmit").innerHTML = "";
             // function sendData() {
             //   const XHR = new XMLHttpRequest();
             //   console.log("XHR created");
@@ -1475,6 +1490,7 @@
             window.location.href = "../shared/level-map.html?level=2&day=2&er=1";
           } else {
             text = "Der eingegebene Code ist nicht korrekt";
+            document.getElementById("errorMessageCodeSubmit").innerHTML = text;
           }
         }
       }
